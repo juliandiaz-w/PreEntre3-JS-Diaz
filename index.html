@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Preentrega III</title>
+</head>
+<body>
+    <h1>SIMULADOR: Catálogo de productos + carrito</h1>
+    <h2>Comisión: 59955</h2>
+    <h2>Julian Diaz</h2>
+    <hr>
+    <input type="text" id="busqueda" placeholder="Buscar producto">
+    <button id="buscarProducto">Buscar</button>
+    <input type="number" id="productoId" placeholder="ID del producto">
+    <input type="number" id="cantidadProducto" placeholder="Cantidad">
+    <button id="agregarAlCarrito">Agregar al carrito</button>
+    <input type="number" id="productoEliminarId" placeholder="ID del producto a eliminar">
+    <input type="number" id="cantidadEliminar" placeholder="Cantidad a eliminar">
+    <button id="eliminarDelCarrito">Eliminar del carrito</button>
+    <template id="catalogo-template">
+        <div class="producto">
+            <div class="columna id"></div>
+            <div class="columna nombre"></div>
+            <div class="columna marca"></div>
+            <div class="columna precio"></div>
+        </div>
+    </template>
+    <template id="carrito-template">
+        <div class="carrito-item">
+            <div class="columna index"></div>
+            <div class="columna nombre"></div>
+            <div class="columna marca"></div>
+            <div class="columna precio"></div>
+            <div class="columna cantidad"></div>
+            <button class="eliminar">Eliminar</button>
+        </div>
+    </template>
+    <div id="catalogo"></div>
+    <div id="carrito"></div>
+    <div id="notificaciones"></div>
+    <button id="finalizarCompra">Finalizar compra ✅</button>
+    <script src="./js/main.js"></script>
+</body>
+</html>
